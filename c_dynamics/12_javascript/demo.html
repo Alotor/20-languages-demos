@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCIPT demo</title>
+        <style>
+            #testCanvas { width: 400px; height: 200px; border: 1px solid grey; }
+        </style>
+    </head>
+    <body>
+        <canvas id="testCanvas"></canvas>
+        <script>
+            var c = document.getElementById("testCanvas");
+            var ctx = c.getContext("2d");
+            ctx.moveTo(0,0);
+            ctx.lineTo(c.width, c.height);
+            
+            ctx.moveTo(c.width,0);
+            ctx.lineTo(0, c.height);
+            ctx.stroke();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,1 @@
+rustc demo.rs && ./demo
